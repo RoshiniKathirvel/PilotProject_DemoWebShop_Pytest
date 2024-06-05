@@ -17,7 +17,7 @@ class Test_Login:
         call.login_success()
         log.info("Login Successful..")
     
-    def test_invalid_login(self):
+    def test_invalid_username(self):
         log1=consolelogger.get_logger()
         calls=Loginpage(self.driver)
         calls.click_login()
@@ -26,5 +26,25 @@ class Test_Login:
         calls.click_loginbtn()
         calls.invalid_login_success()
         log1.info("Invalid credentials.. Not Login into the application")
-
-
+    
+    def test_invalid_password(self):
+        logs=consolelogger.get_logger()
+        get=Loginpage(self.driver)
+        get.click_login()
+        get.enter_email(read_config.get_config("logins info","val_user"))
+        get.enter_pass(read_config.get_config("logins info","inv_pass"))
+        get.click_loginbtn()
+        get.invalid_login_success()
+        logs.info("Invalid credentials.. Not Login into the application")
+    
+    def test_invalid_credentials(self):
+        logs=consolelogger.get_logger()
+        get=Loginpage(self.driver)
+        get.click_login()
+        get.enter_email(read_config.get_config("logins info","invalid_user"))
+        get.enter_pass(read_config.get_config("logins info","invalid_pass"))
+        get.click_loginbtn()
+        get.invalid_login_success()
+        logs.info("Invalid credentials.. Not Login into the application")
+    
+    
