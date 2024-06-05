@@ -34,3 +34,22 @@
 2024-06-05 11:35:32,533 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
 2024-06-05 11:35:48,985 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
 2024-06-05 11:36:07,866 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-05 17:45:06,401 : INFO : test_login : Login Successful..
+2024-06-05 17:45:23,208 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 17:45:39,634 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-05 17:45:55,013 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-05 21:00:56,945 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:08:39,246 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:11:12,728 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:11:47,794 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:12:30,195 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:55:46,513 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:55:46,541 : INFO : test_facebook : Facebook link is active
+2024-06-05 21:58:31,460 : INFO : test_facebook : Facebook link is active
+2024-06-05 22:02:06,622 : INFO : test_facebook : Facebook link is active
+2024-06-05 22:07:55,398 : INFO : test_twitter : Twitter link is active
+2024-06-05 22:16:05,189 : INFO : test_facebook : Facebook link is active
+2024-06-05 22:16:37,013 : INFO : test_twitter : Twitter link is active
+2024-06-05 22:17:29,231 : ERROR : test_youtube : YouTube page did not load in time or title does not match.
+2024-06-05 22:17:44,096 : INFO : test_rss : Rss link is active
+2024-06-05 22:18:27,480 : ERROR : test_google : Google page did not load in time or title does not match.

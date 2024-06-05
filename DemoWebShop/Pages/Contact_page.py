@@ -28,3 +28,5 @@ class Contact_Pages(BasePage):
     def do_click_google(self):
         googles=self.find(self.google)
         self.for_click(googles)
+    
+    
