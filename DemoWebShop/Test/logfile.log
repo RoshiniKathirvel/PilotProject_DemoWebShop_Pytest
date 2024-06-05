@@ -1,0 +1,36 @@
+2024-06-04 13:32:11,281 : INFO : test_facebook : Facebook link is active
+2024-06-04 13:32:26,075 : INFO : test_twitter : Twitter link is active
+2024-06-04 13:32:39,045 : INFO : test_youtube : Youtube link is active
+2024-06-04 13:32:53,189 : INFO : test_rss : Rss link is active
+2024-06-04 13:33:05,780 : INFO : test_google : Google link is active
+2024-06-04 20:26:42,226 : INFO : test_login : Login Successful..
+2024-06-04 20:33:07,397 : INFO : test_login : Login Successful..
+2024-06-04 20:41:10,724 : INFO : test_login : Login Successful..
+2024-06-04 20:43:38,377 : INFO : test_login : Login Successful..
+2024-06-04 20:47:41,872 : INFO : test_login : Login Successful..
+2024-06-04 21:00:39,051 : INFO : test_login : Login Successful..
+2024-06-04 21:01:51,347 : INFO : test_login : Login Successful..
+2024-06-04 21:02:06,916 : INFO : test_invalid_login : Invalid credentials.. Not Login into the application
+2024-06-04 21:04:19,875 : INFO : test_login : Login Successful..
+2024-06-04 21:04:36,583 : INFO : test_invalid_login : Invalid credentials.. Not Login into the application
+2024-06-05 10:30:04,582 : INFO : test_login : Login Successful..
+2024-06-05 10:30:21,587 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 10:32:50,054 : INFO : test_login : Login Successful..
+2024-06-05 10:33:08,882 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 10:36:12,506 : INFO : test_login : Login Successful..
+2024-06-05 10:36:30,823 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 10:40:21,342 : INFO : test_login : Login Successful..
+2024-06-05 10:40:49,888 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 10:45:51,580 : INFO : test_login : Login Successful..
+2024-06-05 10:46:09,395 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 11:08:54,931 : INFO : test_login : Login Successful..
+2024-06-05 11:09:15,426 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 11:09:36,324 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-05 11:20:19,853 : INFO : test_login : Login Successful..
+2024-06-05 11:20:35,833 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 11:20:52,876 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-05 11:21:09,686 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-05 11:35:11,871 : INFO : test_login : Login Successful..
+2024-06-05 11:35:32,533 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-05 11:35:48,985 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-05 11:36:07,866 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
