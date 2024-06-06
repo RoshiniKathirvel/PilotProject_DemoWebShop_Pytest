@@ -1,5 +1,6 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 class BasePage:
     def __init__(self,driver):
         self._driver=driver
@@ -14,3 +15,9 @@ class BasePage:
     
     def find(self,locator):
         return self._driver.find_element(*locator)
+    
+    def wait_for_element(self, locator):
+        return self._wait.until(EC.visibility_of_element_located(locator))
+    
+    def switch_to_window(self):
+        self._driver.switch_to.window(self._driver.window_handles[1])
