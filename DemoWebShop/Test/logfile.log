@@ -53,3 +53,90 @@
 2024-06-05 22:17:29,231 : ERROR : test_youtube : YouTube page did not load in time or title does not match.
 2024-06-05 22:17:44,096 : INFO : test_rss : Rss link is active
 2024-06-05 22:18:27,480 : ERROR : test_google : Google page did not load in time or title does not match.
+2024-06-06 10:20:34,060 : INFO : test_facebook : Facebook link is active
+2024-06-06 11:24:14,863 : INFO : test_click_appreal : Sort value clicked successfully
+2024-06-06 11:24:19,945 : INFO : test_click_appreal : Display clicked successfully
+2024-06-06 11:24:20,012 : INFO : test_click_appreal : Viewas clicked successfully
+2024-06-06 11:27:56,017 : INFO : test_click_appreal : Sort value clicked successfully
+2024-06-06 11:28:01,105 : INFO : test_click_appreal : Display clicked successfully
+2024-06-06 11:28:01,172 : INFO : test_click_appreal : Viewas clicked successfully
+2024-06-06 11:30:46,535 : INFO : test_click_appreal : Sort value clicked successfully
+2024-06-06 11:30:51,581 : INFO : test_click_appreal : Display clicked successfully
+2024-06-06 11:30:51,639 : INFO : test_click_appreal : Viewas clicked successfully
+2024-06-06 11:31:50,078 : INFO : test_click_appreal : Sort value clicked successfully
+2024-06-06 11:31:55,171 : INFO : test_click_appreal : Display clicked successfully
+2024-06-06 11:31:55,269 : INFO : test_click_appreal : Viewas clicked successfully
+2024-06-06 11:38:31,547 : INFO : test_click_appreal : Sort value clicked successfully
+2024-06-06 11:38:36,611 : INFO : test_click_appreal : Display clicked successfully
+2024-06-06 11:38:36,662 : INFO : test_click_appreal : Viewas clicked successfully
+2024-06-06 11:45:46,935 : INFO : test_click_appreal : Display clicked successfully
+2024-06-06 11:45:46,988 : INFO : test_click_appreal : Viewas clicked successfully
+2024-06-06 12:28:32,477 : INFO : test_valid_login : Login Successful..
+2024-06-06 12:28:47,505 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-06 12:29:01,676 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-06 12:29:17,144 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-06 12:35:10,459 : INFO : test_valid_login : Login Successful..
+2024-06-06 12:35:25,296 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-06 12:35:40,823 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-06 12:35:51,856 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-06 12:38:00,954 : INFO : test_valid_login : Login Successful..
+2024-06-06 12:38:15,357 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-06 12:38:29,640 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-06 12:38:41,168 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-06 12:38:55,182 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-06 17:11:31,257 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 17:24:54,460 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 17:25:11,815 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 17:42:22,104 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 17:42:37,319 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 17:42:53,478 : INFO : test_low_high : low to high is success
+2024-06-06 17:47:40,692 : INFO : test_facebook : Facebook link is active
+2024-06-06 17:49:24,642 : INFO : test_facebook : Facebook link is active
+2024-06-06 17:52:31,398 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 17:52:45,321 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 17:53:03,159 : INFO : test_low_high : low to high is success
+2024-06-06 18:15:09,798 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 18:15:27,049 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 18:15:47,135 : INFO : test_low_high : low to high is success
+2024-06-06 18:18:08,287 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 18:18:27,278 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 18:18:46,275 : INFO : test_low_high : low to high is success
+2024-06-06 18:19:05,736 : INFO : test_high_low : high to low is worked successful
+2024-06-06 18:22:41,172 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 18:22:59,611 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 18:23:16,318 : INFO : test_low_high : low to high is success
+2024-06-06 18:23:34,986 : INFO : test_high_low : high to low is worked successful
+2024-06-06 18:43:47,497 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 18:44:01,785 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 18:44:24,753 : INFO : test_low_high : low to high is success
+2024-06-06 18:44:47,187 : INFO : test_high_low : high to low is worked successful
+2024-06-06 18:45:05,366 : INFO : test_createdon : Created on successfull
+2024-06-06 18:48:01,371 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 18:48:20,002 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 18:48:36,026 : INFO : test_low_high : low to high is success
+2024-06-06 18:48:52,723 : INFO : test_high_low : high to low is worked successful
+2024-06-06 18:49:12,298 : INFO : test_createdon : Created on successfull
+2024-06-06 18:54:20,029 : INFO : test_click_z_To_a : Successfully Viewed
+2024-06-06 18:54:38,536 : INFO : test_a_to_z : Showed result for a to z
+2024-06-06 18:54:56,344 : INFO : test_low_high : low to high is success
+2024-06-06 18:55:16,769 : INFO : test_high_low : high to low is worked successful
+2024-06-06 18:55:32,269 : INFO : test_createdon : Created on successfull
+2024-06-06 18:55:48,723 : INFO : test_facebook : Facebook link is active
+2024-06-06 18:56:14,306 : INFO : test_twitter : Twitter link is active
+2024-06-06 18:56:44,062 : INFO : test_youtube : YouTube link is active
+2024-06-06 18:56:57,910 : INFO : test_rss : Rss link is active
+2024-06-06 18:57:52,549 : ERROR : test_google : Google page did not load in time or title does not match.
+2024-06-06 18:58:04,691 : INFO : test_valid_login : Login Successful..
+2024-06-06 18:58:22,299 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-06 18:58:34,072 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-06 18:58:45,114 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-06 18:58:59,981 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-06 22:19:00,466 : INFO : test_valid_female_register : New Register successfully registered
+2024-06-06 22:21:42,027 : INFO : test_valid_female_register : New Register successfully registered
+2024-06-06 22:36:27,011 : INFO : test_valid_female_register : New Female user Register into the application
+2024-06-06 22:36:43,797 : INFO : test_valid_male_register : New Male user registered into the application
+2024-06-06 22:56:45,059 : INFO : test_valid_female_register : New Female user Register into the application
+2024-06-06 22:57:00,315 : INFO : test_valid_male_register : New Male user registered into the application
+2024-06-06 23:10:28,341 : INFO : test_valid_female_register : New Female user Register into the application
+2024-06-06 23:10:43,919 : INFO : test_valid_male_register : New Male user registered into the application
+2024-06-06 23:10:57,757 : INFO : test_exist_user : Existing user..

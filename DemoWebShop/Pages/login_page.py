@@ -1,4 +1,3 @@
-from selenium import webdriver
 from Pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from Utility import read_config
@@ -10,7 +9,7 @@ class Loginpage(BasePage):
     login_btn=(By.XPATH,"//input[@class='button-1 login-button']")
     login_msg=(By.XPATH,"//a[text()='j.k.rose1@gmail.com']")
     invalid_msg=(By.XPATH,"//div[@class='message-error']")
-    
+    blank_invalid=(By.XPATH,"//div[@class='validation-summary-errors']")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -38,3 +37,7 @@ class Loginpage(BasePage):
     def invalid_login_success(self):
         msg=self.find(self.invalid_msg).text
         assert msg=="Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect"
+
+    def blanks_invalid(self):
+        msg=self.find(self.blank_invalid).text
+        assert msg== "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found"
