@@ -145,3 +145,23 @@
 2024-06-07 10:21:57,314 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
 2024-06-07 10:22:15,190 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
 2024-06-07 10:22:37,707 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-07 10:25:20,263 : INFO : test_valid_login : Login Successful..
+2024-06-07 10:25:37,890 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-07 10:25:55,435 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-07 10:26:13,458 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-07 10:26:40,376 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-07 10:42:19,138 : INFO : test_valid_login : Login Successful..
+2024-06-07 10:42:33,321 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-07 10:42:48,509 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-07 10:43:03,342 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-07 10:43:19,926 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-07 10:44:42,514 : INFO : test_valid_login : Login Successful..
+2024-06-07 10:44:58,473 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-07 10:45:12,934 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-07 10:45:26,305 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-07 10:45:40,130 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-07 10:46:33,016 : INFO : test_valid_login : Login Successful..
+2024-06-07 10:46:46,428 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-07 10:47:00,138 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-07 10:47:13,969 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-07 10:47:28,260 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
