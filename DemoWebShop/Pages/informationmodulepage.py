@@ -2,40 +2,42 @@ from selenium.webdriver.common.by import By
 from Pages.base_page import BasePage
 
 class Informationmodule(BasePage):
+    sitemap_l=(By.XPATH, "//a[text()='Sitemap']")
+    shipping_l=(By.XPATH,"//a[text()='Shipping & Returns']")
+    privacy_l = (By.XPATH, "//a[text()='Privacy Notice']")
+    condition_l = (By.XPATH, "//a[text()='Conditions of Use']")
+    about_l = (By.XPATH, "//a[text()='About us']")
+    contact_l = (By.XPATH, "//a[text()='Contact us']")
+    pagetitle = (By.XPATH, "//div[@class='page-title']/h1")
+
+
     def __init__(self, driver):
         super().__init__(driver)
-        self.sitemap_l = self.find((By.XPATH, "//a[text()='Sitemap']"))
-        self.shipping_l = self.find((By.XPATH, "//a[text()='Shipping & Returns']"))
-        self.privacy_l = self.find((By.XPATH, "//a[text()='Privacy Notice']"))
-        self.condition_l = self.find((By.XPATH, "//a[text()='Conditions of Use']"))
-        self.about_l = self.find((By.XPATH, "//a[text()='About us']"))
-        self.contact_l = self.find((By.XPATH, "//a[text()='Contact us']"))
-        self.pagetitle = self.find((By.XPATH, "//div[@class='page-title']/h1"))
-
+    
     def click_sitemap(self):
-        self.for_click(self.sitemap_l)
-        self.get_page_title().__eq__('Sitemap')
-
+       sitemap=self.find(self.sitemap_l)
+       self.for_click(sitemap)
+    
     def click_shipping(self):
-        self.for_click(self.shipping_l)
-        self.get_page_title().__eq__('Shipping & Returns')
+        shipping=self.find(self.shipping_l)
+        self.for_click(shipping)
 
     def click_privacy(self):
-        self.for_click(self.privacy_l)
-        self.get_page_title().__eq__('Privacy Notice')
-
+        privacy=self.find(self.privacy_l)
+        self.for_click(privacy)
+    
     def click_condition(self):
-        self.for_click(self.condition_l)
-        self.get_page_title().__eq__('Conditions of Use')
+        condition=self.find(self.condition_l)
+        self.for_click(condition)
 
     def click_about(self):
-        self.for_click(self.about_l)
-        self.get_page_title().__eq__('About us')
-
+        about=self.find(self.about_l)
+        self.for_click(about)
+    
     def click_contact(self):
-        self.for_click(self.contact_l)
-        self.get_page_title().__eq__('Contact us')
+        contact=self.find(self.contact_l)
+        self.for_click(contact)
 
-    def get_page_title(self):
-        return self.pagetitle.text
+
+
     

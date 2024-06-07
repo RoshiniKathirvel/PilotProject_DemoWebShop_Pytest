@@ -1,4 +1,4 @@
-from Pages.informationmodulepage import Informationmodule
+from Pages.informationmodulepage import Inform
 import pytest
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
