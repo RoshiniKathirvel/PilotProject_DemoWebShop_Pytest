@@ -140,3 +140,8 @@
 2024-06-06 23:10:28,341 : INFO : test_valid_female_register : New Female user Register into the application
 2024-06-06 23:10:43,919 : INFO : test_valid_male_register : New Male user registered into the application
 2024-06-06 23:10:57,757 : INFO : test_exist_user : Existing user..
+2024-06-07 10:21:18,696 : INFO : test_valid_login : Login Successful..
+2024-06-07 10:21:37,437 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-07 10:21:57,314 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-07 10:22:15,190 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-07 10:22:37,707 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
