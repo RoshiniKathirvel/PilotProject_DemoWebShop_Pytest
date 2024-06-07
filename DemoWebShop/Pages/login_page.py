@@ -37,7 +37,3 @@ class Loginpage(BasePage):
     def invalid_login_success(self):
         msg=self.find(self.invalid_msg).text
         assert msg=="Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect"
-
-    def blanks_invalid(self):
-        msg=self.find(self.blank_invalid).text
-        assert msg== "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found"
