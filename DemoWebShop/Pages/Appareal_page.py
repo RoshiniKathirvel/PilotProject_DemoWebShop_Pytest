@@ -19,19 +19,19 @@ class Appreal(BasePage):
     created_on=(By.XPATH,"//option[text()='Created on']")
     low_high_succ=(By.CSS_SELECTOR,"div.product-price")
     high_low_succ=(By.CSS_SELECTOR,"div[class='product-price']")
-    viewas=(By.XPATH,"//option[text()='List']")
+    view_list=(By.XPATH,"//option[text()='List']")
     created_sucess=(By.XPATH,"//div[@class='product-name']")
-    def appreal_click(self):
+    def click_appreal(self):
         store=self.find(self.appreal)
         self.for_click(store)
     
-    def sortby_click(self):
-        store1=self.find(self.sort_by)
-        self.for_click(store1)
+    def click_sortby(self):
+        store=self.find(self.sort_by)
+        self.for_click(store)
     
     def z_to_a(self):
-        store1=self.find(self.ztoa)
-        self.for_click(store1)
+        store=self.find(self.ztoa)
+        self.for_click(store)
     
     def a_to_z(self):
         store=self.find(self.atoz)
@@ -45,19 +45,19 @@ class Appreal(BasePage):
         store=self.find(self.high_low)
         self.for_click(store)
     
-    def createdon(self):
+    def click_createdon(self):
         store=self.find(self.created_on)
         self.for_click(store)
     
-    def viewas_click(self):
+    def click_viewas(self):
         store=self.find(self.view_as)
         self.for_click(store)
     
     def viewas_list(self):
-        store=self.find(self.viewas)
+        store=self.find(self.view_list)
         self.for_click(store)
     
-    def display_click(self):
+    def click_display(self):
         store=self.find(self.display)
         self.for_click(store)
     
