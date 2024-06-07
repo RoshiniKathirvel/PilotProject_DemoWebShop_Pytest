@@ -7,7 +7,7 @@ import pytest
 @pytest.mark.usefixtures("test_setup_and_setdown")
 
 class Test_Login:
-    def test_login(self):
+    def test_valid_login(self):
         log=consolelogger.get_logger()
         call=Loginpage(self.driver)
         call.click_login()
@@ -46,3 +46,12 @@ class Test_Login:
         get.click_loginbtn()
         get.invalid_login_success()
         logs.info("Invalid credentials.. Not Login into the application")
+    
+    def test_invalid_blank(self):
+        logs=consolelogger.get_logger()
+        get=Loginpage(self.driver)
+        get.click_login()
+        get.click_loginbtn()
+        get.blanks_invalid()
+        logs.info("Invalid credentials.. Not Login into the application")
+    
