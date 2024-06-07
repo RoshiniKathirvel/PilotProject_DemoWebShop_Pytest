@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions as EC
-from Pages.bookmodulepage import Bookmodule
+from Pages.Bookmodule_page import Bookmodule
 
 # Using fixture
 @pytest.mark.usefixtures("test_setup_and_setdown")
