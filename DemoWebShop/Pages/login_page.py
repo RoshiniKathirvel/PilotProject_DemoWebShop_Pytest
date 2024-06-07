@@ -11,8 +11,8 @@ class Loginpage(BasePage):
     invalid_msg=(By.XPATH,"//div[@class='message-error']")
     blank_invalid=(By.XPATH,"//div[@class='validation-summary-errors']")
 
-    def __init__(self, driver):
-        super().__init__(driver)
+    def _init_(self, driver):
+        super()._init_(driver)
     
     def click_login(self):
         clogin=self.find(self.login)
