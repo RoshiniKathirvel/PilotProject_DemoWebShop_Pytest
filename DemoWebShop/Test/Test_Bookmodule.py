@@ -26,7 +26,6 @@ class TestBookmodule:
         bookselect = Bookmodule(self.driver)
         bookselect.click_book()
         bookselect.select_product()
-        
         try:
             WebDriverWait(self.driver, 10).until(EC.title_is("Demo Web Shop. Computing and Internet"))
             actual_title = self.driver.title
@@ -40,7 +39,7 @@ class TestBookmodule:
         display = Bookmodule(self.driver)
         display.click_book()
         display.change_display_size()
-        
+
         try:
             dropdown = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.ID, "products-pagesize")))
@@ -54,4 +53,10 @@ class TestBookmodule:
             assert len(products) == 4
         except TimeoutException:
             print("The page is not loaded as expected")
+        @pytest.mark.regressiontest
+        def test_position(self):
+            position=Bookmodule(self.driver)
+            position.click_book
+            position.select_position
+            
          
