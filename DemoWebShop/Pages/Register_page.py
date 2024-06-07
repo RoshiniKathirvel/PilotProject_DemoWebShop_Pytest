@@ -32,11 +32,11 @@ class RegisterPage(BasePage):
         store=self.find(self.male)
         self.for_click(store)
     
-    def enter_first(self,value):
+    def enter_firstname(self,value):
         store=self.find(self.firstname)
         self.for_send_keys(store,value)
     
-    def enter_last(self,value):
+    def enter_lastname(self,value):
         store=self.find(self.lastname)
         self.for_send_keys(store,value)
     
@@ -44,11 +44,11 @@ class RegisterPage(BasePage):
         store=self.find(self.email)
         self.for_send_keys(store,value)
     
-    def enter_pass(self,value):
+    def enter_password(self,value):
         store=self.find(self.password)
         self.for_send_keys(store,value)
         
-    def enter_con_pass(self,value):
+    def enter_con_password(self,value):
         store=self.find(self.con_pass)
         self.for_send_keys(store,value)
     

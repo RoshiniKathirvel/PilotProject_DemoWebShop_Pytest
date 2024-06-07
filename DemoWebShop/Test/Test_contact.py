@@ -1,6 +1,5 @@
 from Pages.Contact_page import Contact_Pages
 import pytest
-import time
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,7 +9,7 @@ from selenium.webdriver.common.by import By
 @pytest.mark.usefixtures("test_setup_and_setdown")
 
 class Test_Contact:
-    @pytest.mark.smoke
+    @pytest.mark.regresion
     def test_facebook(self):
         log=consolelogger.get_logger()
         store=Contact_Pages(self.driver)
@@ -39,7 +38,7 @@ class Test_Contact:
         except TimeoutException:
             log.error("Twitter page did not load in time or title does not match.")
         
-    
+    @pytest.mark.regresion
     def test_youtube(self):
         log=consolelogger.get_logger()
         store=Contact_Pages(self.driver)
@@ -54,13 +53,14 @@ class Test_Contact:
         except TimeoutException:
             log.error("YouTube page did not load in time or title does not match.")
 
-    
+    @pytest.mark.regresion
     def test_rss(self):
         log=consolelogger.get_logger()
         store=Contact_Pages(self.driver)
         store.do_click_Rss()
         log.info("Rss link is active")
     
+    @pytest.mark.regresion
     def test_google(self):
         log=consolelogger.get_logger()
         store=Contact_Pages(self.driver)

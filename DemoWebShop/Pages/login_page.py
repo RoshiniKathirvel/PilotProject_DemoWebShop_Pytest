@@ -1,7 +1,7 @@
 from Pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from Utility import read_config
-from Utility.read_config import get_config
+
 class Loginpage(BasePage):
     login=(By.XPATH,"//a[text()='Log in']")
     email=(By.XPATH,"//input[@class='email']")

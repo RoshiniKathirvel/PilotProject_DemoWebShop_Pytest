@@ -4,66 +4,70 @@ import pytest
 @pytest.mark.usefixtures("test_setup_and_setdown")
 
 class Test_Appreal:
-
-    def test_click_z_To_a(self):
+    @pytest.mark.retest
+    def test_z_To_a(self):
         log=consolelogger.get_logger()
         store=Appreal(self.driver)
-        store.appreal_click()
-        store.sortby_click()
+        store.click_appreal()
+        store.click_sortby()
         store.z_to_a()
-        store.display_click()
+        store.click_display()
         store.option()
-        store.viewas_click()
+        store.click_viewas()
         store.click_element()
         store.sucess_msg()
         log.info("Successfully Viewed")
     
+    @pytest.mark.retest
     def test_a_to_z(self):
         log=consolelogger.get_logger()
         store=Appreal(self.driver)
-        store.appreal_click()
-        store.sortby_click()
+        store.click_appreal()
+        store.click_sortby()
         store.a_to_z()
-        store.display_click()
+        store.click_display()
         store.option()
-        store.viewas_click()
+        store.click_viewas()
         store.click_element()
         store.atoz_success()
         log.info("Showed result for a to z")
     
+    @pytest.mark.retest
     def test_low_high(self):
         log=consolelogger.get_logger()
         store=Appreal(self.driver)
-        store.appreal_click()
-        store.sortby_click()
+        store.click_appreal()
+        store.click_sortby()
         store.low_to_high()
-        store.display_click()
-        store.viewas_click()
+        store.click_display()
+        store.click_viewas()
         store.click_element()
         store.low_success()
         log.info("low to high is success")
     
+    @pytest.mark.retest
     def test_high_low(self):
         log=consolelogger.get_logger()
         store=Appreal(self.driver)
-        store.appreal_click()
-        store.sortby_click()
+        store.click_appreal()
+        store.click_sortby()
         store.high_to_low()
-        store.display_click()
-        store.viewas_click()
+        store.click_display()
+        store.click_viewas()
         store.click_element()
         store.high_success()
         log.info("high to low is worked successful")
     
+    @pytest.mark.retest
     def test_createdon(self):
         log=consolelogger.get_logger()
         store=Appreal(self.driver)
-        store.appreal_click()
-        store.sortby_click()
-        store.createdon()
-        store.viewas_click()
+        store.click_appreal()
+        store.click_sortby()
+        store.click_createdon()
+        store.click_viewas()
         store.viewas_list()
-        store.display_click()
+        store.click_display()
         store.option()
         store.click_element()
         store.createdon_success()
