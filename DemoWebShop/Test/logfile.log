@@ -165,3 +165,19 @@
 2024-06-07 10:47:00,138 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
 2024-06-07 10:47:13,969 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
 2024-06-07 10:47:28,260 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-07 12:15:15,533 : INFO : test_valid_login : Login Successful..
+2024-06-07 12:15:39,285 : INFO : test_invalid_username : Invalid credentials.. Not Login into the application
+2024-06-07 12:16:04,325 : INFO : test_invalid_password : Invalid credentials.. Not Login into the application
+2024-06-07 12:16:21,174 : INFO : test_invalid_credentials : Invalid credentials.. Not Login into the application
+2024-06-07 12:16:36,663 : INFO : test_invalid_blank : Invalid credentials.. Not Login into the application
+2024-06-07 13:15:12,118 : INFO : test_facebook : Facebook link is active
+2024-06-07 13:23:22,110 : INFO : test_a_to_z : Showed result for a to z
+2024-06-07 13:23:39,133 : INFO : test_low_high : low to high is success
+2024-06-07 13:23:57,361 : INFO : test_high_low : high to low is worked successful
+2024-06-07 13:24:17,827 : INFO : test_createdon : Created on successfull
+2024-06-07 13:33:50,724 : INFO : test_a_to_z : Showed result for a to z
+2024-06-07 13:37:46,589 : INFO : test_z_To_a : Successfully Viewed
+2024-06-07 13:38:04,053 : INFO : test_a_to_z : Showed result for a to z
+2024-06-07 13:38:21,489 : INFO : test_low_high : low to high is success
+2024-06-07 13:38:40,063 : INFO : test_high_low : high to low is worked successful
+2024-06-07 13:39:02,006 : INFO : test_createdon : Created on successfull
