@@ -7,7 +7,8 @@ import pytest
 @pytest.mark.usefixtures("test_setup_and_setdown")
 
 class Test_Login:
-    def test_login(self):
+    @pytest.mark.smoke
+    def test_valid_login(self):
         log=consolelogger.get_logger()
         call=Loginpage(self.driver)
         call.click_login()
@@ -17,6 +18,7 @@ class Test_Login:
         call.login_success()
         log.info("Login Successful..")
     
+    @pytest.mark.smoke
     def test_invalid_username(self):
         log1=consolelogger.get_logger()
         calls=Loginpage(self.driver)
@@ -27,6 +29,7 @@ class Test_Login:
         calls.invalid_login_success()
         log1.info("Invalid credentials.. Not Login into the application")
     
+    @pytest.mark.smoke
     def test_invalid_password(self):
         logs=consolelogger.get_logger()
         get=Loginpage(self.driver)
@@ -37,6 +40,7 @@ class Test_Login:
         get.invalid_login_success()
         logs.info("Invalid credentials.. Not Login into the application")
     
+    @pytest.mark.smoke
     def test_invalid_credentials(self):
         logs=consolelogger.get_logger()
         get=Loginpage(self.driver)
@@ -46,3 +50,13 @@ class Test_Login:
         get.click_loginbtn()
         get.invalid_login_success()
         logs.info("Invalid credentials.. Not Login into the application")
+    
+    @pytest.mark.smoke
+    def test_invalid_blank(self):
+        logs=consolelogger.get_logger()
+        get=Loginpage(self.driver)
+        get.click_login()
+        get.click_loginbtn()
+        get.blanks_invalid()
+        logs.info("Invalid credentials.. Not Login into the application")
+    
