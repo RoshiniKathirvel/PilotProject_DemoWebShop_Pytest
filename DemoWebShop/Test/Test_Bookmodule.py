@@ -106,11 +106,8 @@ class TestBookmodule:
             assert "Filter by price" in filter_title
         except TimeoutException:
             print("The page is not loading as expected")
-<<<<<<< HEAD
         logs.info("Successful")
-=======
- 
->>>>>>> d4f6debc502a162e02367625916d157ae2e1be7c
+
         
     @pytest.mark.regressiontest
     def test_addtocart(self):
