@@ -96,6 +96,7 @@ class TestBookmodule:
             assert "Filter by price" in filter_title
         except TimeoutException:
             print("The page is not loading as expected")
+ 
         
 
             
