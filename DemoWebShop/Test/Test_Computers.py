@@ -46,5 +46,5 @@ class Test_Computer:
         computers_page.select_viewmode()
         computers_page.clickAccessories_first_product()
         print("Clicked on accessories first product link.")
-        #computers_page.assert_Accessories_first_product()
+        computers_page.assert_Accessories_first_product()
         print("Assertion for accessories first product completed.")
