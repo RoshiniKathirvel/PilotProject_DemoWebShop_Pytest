@@ -1,15 +1,15 @@
 import pytest
 from Pages.PersonalInfo_page import PersonalInformation
-from Utility import utility_file
+from Utility import read_config
 
 @pytest.mark.usefixtures("test_setup_and_setdown")
 class Test_PersonalInfo:
     def test_login_form(self):
-        information = PersonalInformation(self.driver, utility_file)
+        information = PersonalInformation(self.driver, read_config)
         information.fill_login_form()
 
     def test_cust_form(self):
-        information1 = PersonalInformation(self.driver, utility_file)
+        information1 = PersonalInformation(self.driver,read_config)
         information1.fill_login_form()
         information1.click_gender()
         information1.enter_firstname()
@@ -18,7 +18,7 @@ class Test_PersonalInfo:
         information1.click_save_account()
 
     def test_customer_address(self):
-        information2 = PersonalInformation(self.driver, utility_file)
+        information2 = PersonalInformation(self.driver,read_config)
         information2.fill_login_form()
         information2.click_cust_address()
         information2.click_addNew()
