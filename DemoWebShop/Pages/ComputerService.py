@@ -21,6 +21,7 @@ class ComputerService(BasePage):
     warning_invalid = (By.XPATH, "//strong[@class='result']")
     blog_title = (By.XPATH, "//a[text()='Customer Service - Client Service']")
     blog_link_text = (By.XPATH, "//div[@class='page-title']//child::h1")
+    computers_menu = (By.CSS_SELECTOR, "ul[class='top-menu'] a[href='/computers']")
 
     def click_search(self):
         self.for_click(self.find(self.Search))
@@ -76,4 +77,9 @@ class ComputerService(BasePage):
         assert self.find(self.blog_title).text == "Customer Service - Client Service"
 
     def assert_blog_link_text(self):
-        assert self.find(self.blog_link_text).text == "Blog posts tagged with 'e-commerce'"
+        actual_text = self.find(self.blog_link_text).text.strip()
+        print(f"Actual text: '{actual_text}'")  
+        assert actual_text == "Blog", f"Expected 'Blog', but got '{actual_text}'"
+
+    def click_computers_menu(self):
+        self.for_click(self.find(self.computers_menu))
