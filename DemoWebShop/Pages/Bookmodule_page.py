@@ -27,7 +27,6 @@ class Bookmodule(BasePage):
         book_element = self.find(self.book_l)
         self.for_click(book_element)
 
-    # Define other methods similar to click_book() for each action
     def select_position(self):
         position_element = self.find(self.position_l)
         self.for_click(position_element)
@@ -83,3 +82,9 @@ class Bookmodule(BasePage):
     def click_shopping_cart(self):
         shopping_cart_element = self.find(self.click_shoppingcart)
         self.for_click(shopping_cart_element)
+        
+    def get_product_names(self):
+        product_elements = self._driver.find_elements(*self.productitle_l)
+        product_names = [element.text for element in product_elements]
+        return product_names
+    
