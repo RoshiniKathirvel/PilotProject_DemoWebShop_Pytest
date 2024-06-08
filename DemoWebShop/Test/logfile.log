@@ -181,3 +181,9 @@
 2024-06-07 13:38:21,489 : INFO : test_low_high : low to high is success
 2024-06-07 13:38:40,063 : INFO : test_high_low : high to low is worked successful
 2024-06-07 13:39:02,006 : INFO : test_createdon : Created on successfull
+2024-06-08 19:14:01,476 : INFO : test_sitemap : Navigates to Sitemap page 
+2024-06-08 19:14:17,138 : INFO : test_shipping : Navigates to Shipping page 
+2024-06-08 19:14:33,624 : INFO : test_privacy : Navigates to Privacy page 
+2024-06-08 19:14:49,630 : INFO : test_about : Navigates to About page 
+2024-06-08 19:15:06,394 : INFO : test_contact : Navigates to Contact page 
+2024-06-08 19:15:23,504 : INFO : test_condition : Navigates to Condition page 

@@ -18,7 +18,7 @@ class Bookmodule(BasePage):
     verify_shopping = (By.XPATH, "//div[@class='page-title']/h1")
     asserting_product = (By.XPATH, "//div/h1")
     recentlyviewproduct = (By.XPATH, "(//a[text()='Computing and Internet'])[2]")
-    click_shoppingcart = (By.XPATH, "//p/a")
+    click_shoppingcart = (By.XPATH, "//p[@class='content']/a")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -87,4 +87,5 @@ class Bookmodule(BasePage):
         product_elements = self._driver.find_elements(*self.productitle_l)
         product_names = [element.text for element in product_elements]
         return product_names
+    
     
