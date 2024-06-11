@@ -1,6 +1,8 @@
 from Pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from Utility import read_config
+from selenium.webdriver.support.ui import WebDriverWait
+
 
 class Loginpage(BasePage):
     login=(By.XPATH,"//a[text()='Log in']")
@@ -35,9 +37,11 @@ class Loginpage(BasePage):
         assert suc==(read_config.get_config("login info","user"))
         
     def invalid_login_success(self):
-        msg=self.find(self.invalid_msg).text
-        assert msg=="Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect"
+        msg=self.find(self.invalid_msg)
+        ass=self._driver.execute_script("arguments[0].text",msg)
+        assert (ass,"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect")
 
     def blanks_invalid(self):
-        msg=self.find(self.blank_invalid).text
-        assert msg== "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found"
+        msg=self.find(self.blank_invalid)
+        ass=self._driver.execute_script("arguments[0].text",msg)
+        assert (ass,"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found")
