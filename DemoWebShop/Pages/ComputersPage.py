@@ -17,7 +17,7 @@ class ComputersPage(BasePage):
     click_accessories_first_element= (By.XPATH, "//h2[@class='product-title']//a[text()='TCP Self-Paced Training additional month']")
     grid=(By.XPATH,"//option[text()='Grid']")
 
-    def _init_(self, driver):
+    def init(self, driver):
         super().__init__(driver)
 
     def click_computers_menu(self):
@@ -71,5 +71,7 @@ class ComputersPage(BasePage):
         self.for_click(click_accessories_first_element)
 
     def assert_Accessories_first_product(self):
-       store=self.find(self.tcp).text
-       assert store=="TCP Self-Paced Training additional month"
+       store=self.find(self.tcp)
+       ass=self._driver.execute_script("arguments[0].text",store)
+       assert ass=="TCP Self-Paced Training additional month"
+      

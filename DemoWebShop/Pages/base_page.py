@@ -23,3 +23,6 @@ class BasePage:
     
     def switch_to_window(self):
         self._driver.switch_to.window(self._driver.window_handles[1])
+
+    def find_all(self, locator):
+        return WebDriverWait(self._driver, 10).until(EC.presence_of_all_elements_located(locator))
