@@ -7,7 +7,7 @@ class Bookmodule(BasePage):
     product_l = (By.XPATH, "(//h2/a)[1]")
     view_l = (By.ID, "products-viewmode")
     addtocard_l = (By.XPATH, "(//input[@class='button-2 product-box-add-to-cart-button'])[1]")
-    display_l = (By.ID, "products-pagesize")
+    display_l = (By.CSS_SELECTOR, "#products-pagesize")
     pricefilter_l = (By.XPATH, "(//span[text()='50.00'])[2]")
     actualprice_l = (By.XPATH, "//span[@class='price actual-price']")
     removefilter_l = (By.XPATH, "//a[text()='Remove Filter']")
@@ -41,6 +41,7 @@ class Bookmodule(BasePage):
 
     def add_to_cart(self):
         add_to_cart_element = self.find(self.addtocard_l)
+        self._driver.execute_script("arguments[0].scrollIntoView(true);", add_to_cart_element)
         self.for_click(add_to_cart_element)
 
     def change_display_size(self):
@@ -53,7 +54,7 @@ class Bookmodule(BasePage):
 
     def remove_filter(self):
         remove_filter_element = self.find(self.removefilter_l)
-        self.for_click(remove_filter_element)
+        self._driver.execute_script("arguments[0].click();", remove_filter_element)
 
     def continue_shopping(self):
         continue_shopping_element = self.find(self.continueshoppint_l)
@@ -87,5 +88,3 @@ class Bookmodule(BasePage):
         product_elements = self._driver.find_elements(*self.productitle_l)
         product_names = [element.text for element in product_elements]
         return product_names
-    
-    
