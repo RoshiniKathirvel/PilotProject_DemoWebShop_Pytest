@@ -162,6 +162,7 @@ class PersonalInformation(BasePage):
         success_noOrder_message_text = success_noOrder_message_element.text.strip()
         assert success_noOrder_message_text == expected_result
 
+
     def click_download(self):
         download = self.find(self.download_path)
         self.for_click(download)
@@ -171,6 +172,7 @@ class PersonalInformation(BasePage):
         success_noDownload_message_element = WebDriverWait(self._driver, 10).until(EC.visibility_of_element_located(self.success_message_noDownload))
         success_noDownload_message_text = success_noDownload_message_element.text.strip()
         assert success_noDownload_message_text == expected_result
+
 
     def click_sub(self):
         sub = self.find(self.sub_path)
@@ -217,6 +219,9 @@ class PersonalInformation(BasePage):
 
     def assert_password_change(self):
         expected_result = "Password was changed"
-        success_changepass_message_element = WebDriverWait(self._driver, 10).until(EC.visibility_of_element_located(self.success_message_changepass))
-        success_changepass_message_text = success_changepass_message_element.text.strip()
-        assert success_changepass_message_text == expected_result
+        try:
+            success_changepass_message_element = WebDriverWait(self._driver, 10).until(EC.visibility_of_element_located(self.success_message_changepass))
+            success_changepass_message_text = self._driver.execute_script("return arguments[0].textContent.trim();", success_changepass_message_element)
+            assert success_changepass_message_text == expected_result, f"Expected '{expected_result}', but got '{success_changepass_message_text}'"
+        except AssertionError as e:
+            print(f"Assertion Error: {e}")

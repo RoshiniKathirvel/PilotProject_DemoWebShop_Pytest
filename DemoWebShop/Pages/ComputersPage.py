@@ -7,7 +7,7 @@ class ComputersPage(BasePage):
     desktops_link = (By.CSS_SELECTOR, "h2[class='title'] a[href='/desktops']")
     notebooks_link = (By.CSS_SELECTOR, "h2[class='title'] a[href='/notebooks']")
     accessories_link = (By.CSS_SELECTOR, "h2[class='title'] a[href='/accessories']")
-
+    tcp=(By.XPATH,"//div[@class='product-name']")
     # Locators specific to product category pages
     sortBy_element = (By.XPATH, "//select[@id='products-orderby']")
     pageSize_element = (By.XPATH, "//select[@id='products-pagesize']")
@@ -17,7 +17,7 @@ class ComputersPage(BasePage):
     click_accessories_first_element= (By.XPATH, "//h2[@class='product-title']//a[text()='TCP Self-Paced Training additional month']")
     grid=(By.XPATH,"//option[text()='Grid']")
 
-    def _init_(self, driver):
+    def init(self, driver):
         super().__init__(driver)
 
     def click_computers_menu(self):
@@ -71,8 +71,7 @@ class ComputersPage(BasePage):
         self.for_click(click_accessories_first_element)
 
     def assert_Accessories_first_product(self):
-        try:
-            assert "TCP Self-Paced Training additional month" in self._driver.title
-        except AssertionError:
-            print("Page does not match")
-            raise
+       store=self.find(self.tcp)
+       ass=self._driver.execute_script("arguments[0].text",store)
+       assert ass=="TCP Self-Paced Training additional month"
+      

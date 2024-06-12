@@ -74,7 +74,14 @@ class ComputerService(BasePage):
         assert self.find(self.warning_invalid).text == "No products were found that matched your criteria."
 
     def assert_blog_title(self):
-        assert self.find(self.blog_title).text == "Customer Service - Client Service"
+        try:
+            store = self.find(self.blog_title)
+            ass = self._driver.execute_script("return arguments[0].textContent", store).strip()
+            print(f"Retrieved blog title: '{ass}'")  # Log the retrieved text
+            assert ass == "Customer Service - Client Service", f"Expected 'Customer Service - Client Service', but got '{ass}'"
+        except Exception as e:
+            print(f"Exception occurred in assert_blog_title: {e}")
+            raise
 
     def assert_blog_link_text(self):
         actual_text = self.find(self.blog_link_text).text.strip()
